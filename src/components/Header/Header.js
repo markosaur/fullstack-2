@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import logo from '../../assets/john_sombrero.png'
+import './header.css'
 
 export default class Header extends Component {
     constructor(){
@@ -9,8 +11,16 @@ export default class Header extends Component {
     }
     render() {
         return (
-            <div>
-                Header
+            <div className = 'header'>
+                <div className='logo'>
+                    <img src={logo} alt="johnbrero logo"/>
+                    <h1>Comprajuegos</h1>
+                </div>
+                <div className = 'login-form'>
+                    <input type="text" placeholder='email'/> 
+                    <input type='password' placeholder='password' /> 
+                    <button>Login</button>
+                </div>
             </div>
         )
     }
